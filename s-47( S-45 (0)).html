@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <style>
+            body
+            {
+                background: linear-gradient( to right,#a7e4bb,lightgreen)
+            }
+            fieldset
+            {
+                font-size: 45px;
+            }
+            h1:first-letter
+            {
+                color: #520404;
+                font-size: 50px;
+                text-shadow: 4px 4px 3px #191970;
+            }
+        </style> 
+        <h1>Form</h1>
+        <form action="S-45 (1).html" target="_blank">
+           <fieldset>
+            
+            Name <br>
+            <input type="text"  name="A1"><br>
+            Age<br>
+            <input type="number" name="B2"><br>
+            enter an even number <br>
+            <input type="number" name="c3" id="C3"><br>
+            <button onclick="jon()" type="button" >check</button>
+            <input type="submit" id="subway" >
+           </fieldset>
+        </form>
+
+           
+        <script>
+            function jon()
+            {
+                
+                var a=document.getElementById("C3").value
+                if(a%2==0)
+                {
+           
+                    alert("success")
+                    subway.disabled=false
+                 }
+                else
+                {
+                    alert("not success")
+                    subway.disabled=true
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
